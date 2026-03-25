@@ -1,3 +1,5 @@
+package org.example;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -9,7 +11,7 @@ public class Main {
                 DBConfig.getUser(),
                 DBConfig.getPassword()
         )) {
-            System.out.println("Connected to database.");
+            System.out.println("Conectado con Oracle.");
         } catch (SQLException e){
             System.out.println("ERROR --> "+e.getMessage());
         }
